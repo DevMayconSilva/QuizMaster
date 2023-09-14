@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>QuizMaster - Teste Seu Conhecimento</title>
+</head>
+<body>
+  <div id="quiz-container" class="quiz-container">
+    <header>
+      <h1>QuizMaster - Teste Seu Conhecimento</h1>
+    </header>
+    
+    <div id="start-page" class="start-page">
+      <h1>Bem-vindo ao QuizMaster</h1>
+      <p>Teste seu conhecimento em diversas áreas!</p>
+      <button id="start-button">Iniciar Quiz</button>
+    </div>
+
+    <main id="quiz-page" style="display: none;">
+      <h2 class="question" id="question">Pergunta</h2>
+      <div id="options-container"></div>
+      <button id="confirm-button">Confirmar</button>
+      <p id="timer">Tempo: <span id="time-left">30</span>s</p>
+      <p id="score">Pontuação: <span id="current-score">0</span> de <span id="total-questions">0</span></p>
+      <div id="lives" class="lives-display">
+        Vidas: 
+        <span class="heart-emoji">❤️</span>
+        <span class="heart-emoji">❤️</span>
+        <span class="heart-emoji">❤️</span>
+      </div>
+      <p id="selection-warning" style="color: red; display: none;">Por favor, selecione uma opção antes de confirmar.</p>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Maycon_Silva. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
